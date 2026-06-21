@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>🌍 EcoTrack AI</h1>
+    <p>Carbon Footprint Awareness Platform</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Carbon Calculator</h2>
+
+        <label>Daily Car Travel (km)</label>
+        <input type="number" id="car" value="0">
+
+        <label>Monthly Electricity Usage (kWh)</label>
+        <input type="number" id="electricity" value="0">
+
+        <label>Flights Per Year</label>
+        <input type="number" id="flights" value="0">
+
+        <label>Diet Type</label>
+        <select id="diet">
+            <option value="3">Meat Heavy</option>
+            <option value="2">Mixed Diet</option>
+            <option value="1">Vegetarian</option>
+            <option value="0.5">Vegan</option>
+        </select>
+
+        <button onclick="calculateFootprint()">
+            Calculate Footprint
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Results</h2>
+
+        <div id="emission"></div>
+        <div id="score"></div>
+
+        <h3>AI Sustainability Advisor</h3>
+        <div id="advisor"></div>
+
+        <div id="recommendations"></div>
+
+        <button onclick="downloadReport()">
+            Download Report
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Emission Breakdown</h2>
+
+        <canvas id="carbonChart"></canvas>
+    </div>
+
+</div>
+
+<footer>
+    Built for Carbon Footprint Awareness Challenge 🌱
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
