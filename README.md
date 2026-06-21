@@ -152,7 +152,7 @@ Results.png
 
 ## Live Demo
 
-https://6a3809ba6f569a29bcb69eb7--cozy-clafoutis-5bc236.netlify.app/
+https://spiffy-starlight-f4bdf7.netlify.app
 
 ## GitHub Repository
 
