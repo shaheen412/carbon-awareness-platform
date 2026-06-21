@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your personal carbon footprint, view breakdowns, and get tailored AI-driven sustainability advice.">
     <title>EcoTrack AI</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 </head>
 <body>
 
@@ -16,21 +17,21 @@
     <p>Carbon Footprint Awareness Platform</p>
 </header>
 
-<div class="container">
+<main class="container">
 
     <div class="card">
         <h2>Carbon Calculator</h2>
 
-        <label>Daily Car Travel (km)</label>
+        <label for="car">Daily Car Travel (km)</label>
         <input type="number" id="car" value="0">
 
-        <label>Monthly Electricity Usage (kWh)</label>
+        <label for="electricity">Monthly Electricity Usage (kWh)</label>
         <input type="number" id="electricity" value="0">
 
-        <label>Flights Per Year</label>
+        <label for="flights">Flights Per Year</label>
         <input type="number" id="flights" value="0">
 
-        <label>Diet Type</label>
+        <label for="diet">Diet Type</label>
         <select id="diet">
             <option value="3">Meat Heavy</option>
             <option value="2">Mixed Diet</option>
@@ -38,12 +39,12 @@
             <option value="0.5">Vegan</option>
         </select>
 
-        <button onclick="calculateFootprint()">
+        <button onclick="calculateFootprint()" class="btn-high-contrast">
             Calculate Footprint
         </button>
     </div>
 
-    <div class="card">
+    <section class="card" aria-label="Results Panel">
         <h2>Results</h2>
 
         <div id="emission"></div>
@@ -54,24 +55,23 @@
 
         <div id="recommendations"></div>
 
-        <button onclick="downloadReport()">
+        <button onclick="downloadReport()" class="btn-high-contrast">
             Download Report
         </button>
-    </div>
+    </section>
 
     <div class="card">
         <h2>Emission Breakdown</h2>
-
         <canvas id="carbonChart"></canvas>
     </div>
 
-</div>
+</main>
 
 <footer>
     Built for Carbon Footprint Awareness Challenge 🌱
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
