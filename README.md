@@ -1,18 +1,80 @@
-# 🌍 EcoTrack AI - Carbon Footprint Awareness Platform
+# 🌍 EcoTrack AI – Carbon Footprint Awareness Platform
 
-## Overview
+## Chosen Vertical
 
-EcoTrack AI is a web-based Carbon Footprint Awareness Platform designed to help users understand, track, and reduce their environmental impact.
+Environmental Sustainability
 
-The application calculates carbon emissions based on transportation, electricity consumption, flights, and dietary habits, then provides personalized recommendations for adopting a more sustainable lifestyle.
+This project focuses on helping individuals understand, track, and reduce their carbon footprint through a simple and interactive web application.
+
+---
+
+## Project Overview
+
+EcoTrack AI is a Carbon Footprint Awareness Platform that estimates a user's environmental impact based on transportation habits, electricity consumption, flight frequency, and dietary choices.
+
+The platform provides personalized recommendations that encourage more sustainable daily habits.
 
 ---
 
 ## Problem Statement
 
-Many individuals are unaware of how their daily activities contribute to carbon emissions. Without clear insights and practical guidance, it is difficult to make environmentally responsible decisions.
+Many people are unaware of how their everyday activities contribute to carbon emissions. Without awareness and actionable guidance, it is difficult to make environmentally responsible decisions.
 
-EcoTrack AI addresses this challenge by helping users calculate their carbon footprint and providing actionable recommendations to reduce emissions.
+EcoTrack AI addresses this challenge by providing a simple way to estimate carbon emissions and receive recommendations for improvement.
+
+---
+
+## Approach and Logic
+
+The application collects user inputs related to:
+
+* Daily car travel
+* Monthly electricity usage
+* Flights per year
+* Diet type
+
+Each category contributes to the user's estimated carbon footprint using predefined emission factors.
+
+The total footprint is calculated and used to generate:
+
+* Sustainability Score
+* Emission Breakdown
+* Personalized Recommendations
+
+The application also visualizes emission categories using charts for better understanding.
+
+---
+
+## How the Solution Works
+
+### Step 1
+
+The user enters lifestyle information.
+
+### Step 2
+
+The application calculates emissions from:
+
+* Transportation
+* Electricity
+* Flights
+* Diet
+
+### Step 3
+
+A total carbon footprint value is generated.
+
+### Step 4
+
+The system assigns a sustainability score.
+
+### Step 5
+
+Recommendations are displayed based on the user's results.
+
+### Step 6
+
+The user can download a summary report.
 
 ---
 
@@ -22,8 +84,8 @@ EcoTrack AI addresses this challenge by helping users calculate their carbon foo
 * Sustainability Score
 * Emission Breakdown Chart
 * Personalized Recommendations
-* Downloadable Carbon Report
-* Responsive User Interface
+* Downloadable Report
+* Responsive Design
 
 ---
 
@@ -36,77 +98,41 @@ EcoTrack AI addresses this challenge by helping users calculate their carbon foo
 
 ---
 
-## How It Works
+## Assumptions Made
 
-1. User enters:
-
-   * Daily car travel
-   * Monthly electricity usage
-   * Flights per year
-   * Diet type
-
-2. The application calculates estimated carbon emissions.
-
-3. Results are displayed through:
-
-   * Carbon Footprint Score
-   * Emission Breakdown Chart
-   * Sustainability Recommendations
-
-4. Users can download a summary report.
-
----
-
-## AI Usage Documentation
-
-### AI Tools Used
-
-* Gemini
-
-### Purpose
-
-AI was used for:
-
-* Code assistance
-* Debugging support
-* UI improvement suggestions
-* Documentation generation
-* Project planning
-
-### Human Contributions
-
-* Project setup
-* Code integration
-* Testing
-* Deployment
-* Feature selection
-
----
-
-## Accessibility
-
-* Responsive Design
-* Mobile Friendly Layout
-* Clear Labels and Inputs
-* Readable Typography
+* Carbon emission factors are simplified estimates.
+* User-provided information is assumed to be accurate.
+* The application is intended for awareness and educational purposes.
+* Results are approximate and not official environmental assessments.
 
 ---
 
 ## Security
 
-* Input Validation
-* No Sensitive User Data Stored
-* Client-Side Processing
+* Input validation implemented
+* No sensitive personal information stored
+* Client-side processing only
 
 ---
 
-## Future Enhancements
+## Accessibility
 
-* AI Sustainability Advisor
-* User Accounts
-* Carbon Footprint History
-* Weekly Progress Tracking
-* Carbon Reduction Goals
+* Responsive layout
+* Mobile-friendly interface
+* Clear form labels
+* Readable typography
+
+---
+
+## Testing
+
+The application was tested for:
+
+* Carbon calculation functionality
+* Form validation
+* Chart generation
+* Recommendation generation
+* Mobile responsiveness
 
 ---
 
